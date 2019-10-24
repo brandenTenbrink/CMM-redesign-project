@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Route, Redirect, BrowserRouter as Router } from 'react-router-dom';
 
-function App() {
+import HomeNavigation from './screens/HomeNavigation';
+import CreateAccount from './screens/CreateAccount';
+import Careers from './screens/Careers';
+
+import { NavigationBar } from './componentLibrary';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <main>
+        <NavigationBar />
+        <Switch>
+          <Route exact path='/' component={HomeNavigation} />
+          <Route name="createAccount" path="/create-account" component={CreateAccount} />
+          <Route name="careers" path="/careers/open-positions" component={Careers} />
+          <Redirect to="/" />
+        </Switch>
+      </main>
+    </Router>
   );
 }
 
