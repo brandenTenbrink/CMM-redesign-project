@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { StyledButton } from './styles';
+import { PrimaryButton, SecondaryButton } from './styles';
 
 class Button extends Component {
     render() {
@@ -13,18 +13,32 @@ class Button extends Component {
             onClick,
             type
         } = this.props;
-        console.log(disabled);
-        return (
-            <StyledButton
-                variant={variant} 
-                onClick={onClick} 
-                disabled={disabled} 
-                size={size}
-                type={type}
-            >
-                {label}
-            </StyledButton>
-        );
+        switch(type) {
+            case 'primary':
+                return (
+                    <PrimaryButton
+                        variant={variant} 
+                        onClick={onClick} 
+                        disabled={disabled} 
+                        size={size}
+                        type={type}
+                    >
+                        {label}
+                    </PrimaryButton>
+                );
+            case 'secondary':
+                return (
+                    <SecondaryButton
+                        variant={variant} 
+                        onClick={onClick} 
+                        disabled={disabled} 
+                        size={size}
+                        type={type}
+                    >
+                        {label}
+                    </SecondaryButton>
+                )
+        }
     }
 }
 

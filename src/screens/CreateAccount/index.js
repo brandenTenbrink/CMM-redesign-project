@@ -191,6 +191,7 @@ class CreateAccount extends Component {
                     />
                     <Button 
                         label='SIGN UP'
+                        type='primary'
                         onClick={() => {}}
                         disabled={this.validateForm()}
                     />

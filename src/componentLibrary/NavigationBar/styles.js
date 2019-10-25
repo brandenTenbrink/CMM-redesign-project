@@ -38,7 +38,8 @@ float: left;
 const BackButtonText = styled.div`
 color: ${SECONDARY_COLOR}
 float: right;
-padding-top: 2px;
+padding-top: 4px;
+font-size: 14px;
 `;
 
 const CreateAccountNavLink = styled(NavLink)`

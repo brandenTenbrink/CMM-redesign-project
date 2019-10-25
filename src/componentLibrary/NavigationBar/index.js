@@ -19,7 +19,7 @@ class NavigationBar extends Component {
     render() {
         const { location } = this.props;
         const pathName = location.pathname;
-        const isCreateAccount = pathName === '/create-account';
+        const isCreateAccount = pathName !== '/';
 
         return (
             <>
@@ -42,7 +42,7 @@ class NavigationBar extends Component {
                         </NavLink>
 
                         <ContentContainer>
-                            <NavigationLink to='/careers/open-positions'>Careers</NavigationLink>
+                            <NavigationLink to='/careers/creative-technologist'>Creative Technologist Role</NavigationLink>
                             <NavigationTextSeparator>|</NavigationTextSeparator>
                             <CreateAccountNavLink to='/create-account'>
                                 CREATE A FREE ACCOUNT

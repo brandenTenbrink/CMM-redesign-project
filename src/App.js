@@ -15,7 +15,7 @@ const App = () => {
         <Switch>
           <Route exact path='/' component={HomeNavigation} />
           <Route name="createAccount" path="/create-account" component={CreateAccount} />
-          <Route name="careers" path="/careers/open-positions" component={Careers} />
+          <Route name="careers" path="/careers/creative-technologist" component={Careers} />
           <Redirect to="/" />
         </Switch>
       </main>
