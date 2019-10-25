@@ -1,3 +1,19 @@
+## Notes
+
+1) The Home Page header is not mobile responsive--To fix this I would have changed the header bar to use a dropdown that contained each Link vs. displaying them in the bar itself
+
+2) Dropdowns were not implemented in this project--they are very complicated to get functioning in a crisp, clean matter. I can provide code that I've done on dropdowns if need, however!
+
+3) Some content was cut from the application flow--namely the government requirements. I feel that the current implementation conveys the scope of the re-design that I wished to portray. The missing government requirements would have each become an inidivdual step in the flow. At the end, there would be a "Thanks for submitting your application" Page.
+
+4) Yes, the code is very heavy and lengthy. React is a very verbose language by nature, and while there are ways to consolidate the amount of the methods used for validation and onChange events, it is my personal opinion that the verbosity is a boon for both readability and better understanding of the overall code.
+
+5) As far as I am aware, the project should work out of the box (simply npm start) with mininmal issues/bugs. If you do run into any issues, however, feel free to reach out to me at branden.tenbrink@gmail.com
+
+## Thanks for checking it out!
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
